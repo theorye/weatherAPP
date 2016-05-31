@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="weatherApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/city/city.module.js"></script>
+    <script src="core/city/city.service.js"></script>
+    <script src="core/weather/weather.module.js"></script>
+    <script src="core/weather/weather.service.js"></script>
+    <script src="core/weatherReport/weatherReport.module.js"></script>
+    <script src="core/weatherReport/weatherReport.directive.js"></script>
+    <script src="home/home.module.js"></script>
+    <script src="home/home.component.js"></script>
+    <script src="weather-forecast/weather-report.module.js"></script>
+    <script src="weather-forecast/weather-report.directive.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+  		<nav class="navbar navbar-default">
+  			<div class="container">
+  				<div class="navbar-header">
+  					<a class="navbar-brand" href="/">AngularJS Weather</a>
+  				</div>
+
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+  				</ul>
+  			</div>
+  		</nav>
+    </header>
+
+    <div class="container">
+      <div ng-view></div>
+    </div>
+
+  </body>
+</html>
